@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Crystal Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
+
 <body>
-  
+  <div class="jumbotron-fluid background py-5">
+    <div class="row align-items-center">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4 text-center justify-content-center">
+        <h1>Crystal Collectors</h1>
+        <button id="new-game-button">
+          <i class="fas fa-gamepad"></i>
+          New Game
+        </button>
+      </div>
+      <div class="col-md-4">
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center py-3" id="score-board">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 my-3">
+              <h2>Target
+                <br/>
+                <span id="target"></span>
+              </h2>
+            </div>
+            <div class="col-md-4">
+              <h2>Score
+                <br/>
+                <span id="score"></span>
+              </h2>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <h3>
+                    Wins:
+                    <span id="wins"></span>
+                  </h3>
+                </div>
+              </div>
+              <div class="row text-center my-3">
+                <div class="col-md-12">
+                  <h3>
+                    Losses:
+                    <span id="losses"></span>
+                  </h3>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-md-3 text-center">
+          <img src="./assets/images/image1.png" alt="" class="crystal" id="crystal1">
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="./assets/images/image2.png" alt="" class="crystal" id="crystal2">
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="./assets/images/image3.jpg" alt="" class="crystal" id="crystal3">
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="./assets/images/image4.jpg" alt="" class="crystal" id="crystal4">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="./assets/javascript/game.js"></script>
 </body>
+
 </html>
